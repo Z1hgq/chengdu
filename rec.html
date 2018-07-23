@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>成都榜样-活动动态</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/message.css">
+	<script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- 富文本编辑器 -->
+	<script type="text/javascript" charset="utf-8" src="backWeb/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="backWeb/ueditor/ueditor.all.min.js">
+	</script>
+	<!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+	<!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+	<script type="text/javascript" charset="utf-8" src="backWeb/ueditor/lang/zh-cn/zh-cn.js"></script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="js/message.min.js"></script>
+	<script type="text/javascript" src="backWeb/js/jquerysession.js">
+	</script>
+	<script type="text/javascript" src="js/rec.js">
+	</script>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<div style=" width: 100%; height:372px; background: url(images/bg-pic.jpg) center top no-repeat">
+	</div>
+	<div class="navigation">
+		<ul class="nav nav-tabs" style="margin-left: 25%; width: 50%; float: left; clear: both;">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="ac_intro.html">活动介绍</a></li>
+			<li><a href="ac_dyn.html">活动动态</a></li>
+			<li class="active"><a href="rec.html">推荐好人</a></li>
+			<li><a href="show.html">好人榜展示</a></li>
+			<li><a href="search.html">好人检索</a></li>
+			<li><a href="model.html">道德模范</a></li>
+		</ul>
+	</div>
+	<div style="margin-left: 20%">当前位置：推荐好人</div>
+	<div class="main" style="height:auto;">
+		<div style="margin-left: 5%; width: 90%; overflow: hidden;">
+			<div style="fonr-size: 25px; font-weight: bold; color: red; width: 100%; margin-top: 15px;">推荐人信息</div>
+			<div style="border: 1px solid #b13144; width: 100%; margin-top: 15px;">
+				<div style="width: 50%; float: left; margin-top: 15px;">
+					<p style="line-height: 22px;">
+						<span style="color: red;">*&nbsp;</span>姓名 <input type="text" id="re_name">
+					</p>
+				</div>
+				<div style="width: 50%; float: left; margin-top: 15px;">
+					<p style="line-height: 22px;">
+						<span style="color: red;">*&nbsp;</span>电话 <input type="text" id="re_mobile">
+					</p>
+				</div>
+				<div style="width: 50%; float: left; margin-top: 10px;">
+					<p style="line-height: 22px;">
+						<span style="color: red;">*&nbsp;</span>身份证号 <input type="text" id="re_id">
+					</p>
+				</div>
+			</div>
+
+
+			<div style="fonr-size: 25px; font-weight: bold; color: red; width: 100%; margin-top: 120px;">被推荐人信息</div>
+			<div style="border: 1px solid #b13144; width: 100%; margin-top: 15px;">
+				<div style="width: 50%; float: left; margin-top: 15px;">
+					<p style="line-height: 22px;">
+						<span style="color: red;">*&nbsp;</span>姓名 <input type="text" id="red_name">
+					</p>
+				</div>
+			</div>
+			<div style="width: 50%; float: left; margin-top: 15px;">
+				<p style="line-height: 22px;">
+					<span style="color: red;">*&nbsp;</span>电话 <input type="text" id="red_mobile">
+				</p>
+			</div>
+			<div style="width: 50%; float: left; margin-top: 15px;">
+				<p style="line-height: 22px;">
+					<span style="color: red;">*&nbsp;</span>地区
+					<select id="red_select">
+							<option value="青羊区">青羊区</option>
+							<option value="成华区">成华区</option>
+							<option value="金牛区">金牛区</option>
+							<option value="锦江区">锦江区</option>
+							<option value="龙泉驿区">龙泉驿区</option>
+							<option value="郫都区">郫都区</option>
+							<option value="双流区">双流区</option>
+							<option value="温江区">温江区</option>
+							<option value="武侯区">武侯区</option>
+							<option value="都江堰市">都江堰市</option>
+							<option value="崇州市">崇州市</option>
+							<option value="彭州市">彭州市</option>
+							<option value="邛崃市">邛崃市</option>
+							<option value="新都区">新都区</option>
+							<option value="青白江区">青白江区</option>
+							<option value="简阳市">简阳市</option>
+							<option value="金堂县">金堂县</option>
+							<option value="浦江县">浦江县</option>
+							<option value="新津县">新津县</option>
+							<option value="大邑县">大邑县</option>
+							<option value="其他">其他</option>
+						</select>
+				</p>
+			</div>
+			<div style="width: 50%; float: left; margin-top: 10px;">
+				<p style="line-height: 22px;">
+					<span style="color: red;">*&nbsp;</span>身份证号 <input type="text" id="red_id">
+				</p>
+			</div>
+			<div style="width: 50%; float: left; margin-top: 10px;">
+				<p style="line-height: 22px;">
+					<span style="color: red;">*&nbsp;</span>事迹类型 <input type="text" id="th_type">
+				</p>
+			</div>
+			<div style="width: 50%; float: left; margin-top: 10px;">
+				<p style="line-height: 22px;">
+					<span style="color: red;">*&nbsp;</span>事迹标题 <input type="text" id="th_title">
+				</p>
+			</div>
+			<div style="width: 50%; float: left; margin-top: 10px;">
+				<p style="line-height: 22px;">
+					<input type='text' name='textfield' id='textfield' class='txt' />
+			    <button class="btn btn-info" onclick="file.click()" id="mybtn">浏览...</button>
+			    <input type="file" name="file" class="file" id="file" size="28" onchange="document.getElementById('textfield').value=this.value" />
+			    <button class="btn btn-info" onclick="UpladFile()" id="mybtn">上传本人照片</button>
+				</p>
+				<p id="pic_path" style="display:none"></p>
+			</div>
+			<div class="form-group" style="margin-left:5%;">
+				<button class="btn btn-info" type="button" id="news_content_commit" style="margin-left:80%">上传</button>
+				<button class="btn btn-info" type="button" id="news_content_reset" style="">重置</button>
+			</div>
+			<div style="width:100%;height:auto;margin-top:10px;">
+				<script id="editor" type="text/plain" style="height:500px;"></script>
+			</div>
+
+		</div>
+	</div>
+	<div style="height: 60px;">
+		<div class="footer">
+			Copyright All Rights Reserved <br /> xxxxxxxxxxx<br /> 活动监督电话：028-61887874
+		</div>
+	</div>
+</body>
+
+</html>

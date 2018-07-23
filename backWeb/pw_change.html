@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <title>成都榜样-后台管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://fonts.googleapis.com/css?family=Oxygen|Marck+Script" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/admin.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/message.css">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="span2">
+
+		<div class="main-left-col">
+
+			<h1><i class="icon-shopping-cart icon-large"></i> Admin</h1>
+
+      <ul class="side-nav">
+
+				<li>
+					<a href="src_mng.html"><i class="icon-home"></i>素材管理</a>
+				</li>
+				<li>
+					<a href="ac_up.html"><i class="icon-home"></i>活动介绍</a>
+				</li>
+				<li>
+					<a href="list_mng.html"><i class="icon-home"></i>榜单管理</a>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="collapse" data-target="#website-dropdown" href="#"><i class="icon-sitemap"></i>用户管理<b class="caret"></b></a>
+					<ul id="website-dropdown" class="collapse">
+						<li><a href="pw_change.html">修改密码</a></li>
+						<li><a href="login.html">退出登录</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="collapse" data-target="#members-dropdown" href="#"><i class="icon-sitemap"></i>稿件管理<b class="caret"></b></a>
+					<ul id="members-dropdown" class="collapse">
+						<li><a href="news_pub.html">新闻稿发布</a></li>
+						<li><a href="news_mng.html">新闻稿管理</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</div> <!-- end main-left-col -->
+
+	</div> <!-- end span2 -->
+
+	<div class="span10">
+
+	<div class="secondary-masthead">
+
+		<ul class="nav nav-pills pull-right">
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="logname"><i class="icon-user"></i> John Smith <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li class="divider"></li>
+					<li ><a href="login.html" id="logout">Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<ul class="breadcrumb">
+			<li>
+				<a href="#">成都榜样</a> <span class="divider">/</span>
+			</li>
+			<li class="active">修改密码</li>
+		</ul>
+
+	</div>
+
+	<div class="main-area dashboard">
+    <div class="form-group" style="margin-left:5%;">
+                    <label for="name" style="margin-top:30px;">请输入原密码</label>
+                    <input type="text" class="form-control" style="border-radius:5px;margin-top:10px;" id="pre_pw"
+                         placeholder="原密码">
+                    <label for="name" style="margin-top:10px;">请输入新密码</label>
+                    <input type="text" class="form-control" style="border-radius:5px;margin-top:10px;" id="new_pw"
+                         placeholder="新密码">
+                    <label for="name" style="margin-top:10px;">请再次输入新密码</label>
+                    <input type="text" class="form-control" style="border-radius:5px;margin-top:10px;" id="re_new_pw"
+                         placeholder="新密码">
+                </div>
+                <button class="btn btn-info" type="button" id="pw_change" style="margin-left:5%;">确认</button>
+
+	</div>
+
+	</div> <!-- end span10 -->
+
+	</div> <!-- end row -->
+
+</div> <!-- end container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/excanvas.min.js"></script>
+<script src="js/jquery.flot.min.js"></script>
+<script src="js/jquery.flot.resize.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/message.min.js"></script>
+<script type="text/javascript" src="js/jquerysession.js">
+</script>
+<script type="text/javascript" src="js/public/pw_change.js">
+</script>
+
+</body>
+</html>

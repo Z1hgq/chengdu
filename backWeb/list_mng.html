@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>成都榜样-后台管理</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Le styles -->
+	<link href="http://fonts.googleapis.com/css?family=Oxygen|Marck+Script" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/admin.css" rel="stylesheet" type="text/css">
+	<link href="css/list_mng.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/message.css">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="span2">
+
+				<div class="main-left-col">
+
+					<h1><i class="icon-shopping-cart icon-large"></i><div style="font-size:15px;">成都榜样</div></h1>
+
+					<ul class="side-nav">
+
+						<li>
+							<a href="src_mng.html"><i class="icon-home"></i>素材管理</a>
+						</li>
+						<li>
+							<a href="ac_up.html"><i class="icon-home"></i>活动介绍</a>
+						</li>
+						<li class="active">
+							<a href="list_mng.html"><i class="icon-home"></i>榜单管理</a>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="collapse" data-target="#website-dropdown" href="#"><i class="icon-sitemap"></i>用户管理<b class="caret"></b></a>
+							<ul id="website-dropdown" class="collapse">
+								<li><a href="pw_change.html">修改密码</a></li>
+								<li><a href="login.html">退出登录</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="collapse" data-target="#members-dropdown" href="#"><i class="icon-sitemap"></i>稿件管理<b class="caret"></b></a>
+							<ul id="members-dropdown" class="collapse">
+								<li><a href="news_pub.html">新闻稿发布</a></li>
+								<li><a href="news_mng.html">新闻稿管理</a></li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+				<!-- end main-left-col -->
+
+			</div>
+			<!-- end span2 -->
+
+			<div class="span10">
+
+				<div class="secondary-masthead">
+
+					<ul class="nav nav-pills pull-right">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="logname"><i class="icon-user"></i> John Smith <b class="caret"></b>
+				</a>
+							<ul class="dropdown-menu">
+								<li class="divider"></li>
+								<li ><a href="login.html" id="logout">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">成都榜样</a> <span class="divider">/</span>
+						</li>
+						<li><a href="" id="contentMain_back">榜单管理</a></li>
+						<li id="info_nav" style="display:none"><span class="divider">/</span>个人信息</li>
+					</ul>
+
+				</div>
+
+				<div class="main-area dashboard">
+					<div id="red_people" style="margin-left:5%;margin-top:30px;display:none">
+						<div style="float:left;width:20%;text-align:center;">
+							姓名
+						</div>
+						<div id="red_people_name" style="float:left;width:20%;text-align:left;">
+							name
+						</div>
+						<div id="red_people_photo" style="float:left;width:80px;height:100px;background-color:white; background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;">
+						</div>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div style="float:left;width:20%;text-align:center;">
+							身份证号
+						</div>
+						<div id="red_people_id" style="float:left;width:20%;text-align:left;">
+							id
+						</div>
+						<br>
+						<br>
+						<div style="float:left;width:20%;text-align:center;">
+							联系电话
+						</div>
+						<div id="red_people_mobile" style="float:left;width:20%;text-align:left;">
+							mobile
+						</div>
+						<br>
+						<br>
+						<div style="float:left;width:20%;text-align:center;">
+							地区
+						</div>
+						<div id="red_people_area" style="float:left;width:20%;text-align:left;">
+							area
+						</div>
+						<br>
+						<br>
+						<div style="float:left;width:20%;text-align:center;">
+							称号
+						</div>
+						<div id="red_people_title" style="float:left;width:20%;text-align:left;">
+							title
+						</div>
+					</div>
+					<div id="con" style="margin-left:5%;margin-top:30px;">
+						<div style="float:left;width:12%;text-align:center;">
+							姓名
+						</div>
+
+						<div style="float:left;width:60%;text-align:center;">
+							称号
+						</div>
+						<br>
+
+						<div id="area0" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname0" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select0" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info0" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title0" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn0" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn0" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area1" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname1" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select1" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info1" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title1" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn1" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn1" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area2" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname2" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select2" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info2" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title2" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn2" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn2" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area3" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname3" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select3" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info3" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title3" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn3" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn3" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area4" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname4" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select4" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info4" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title4" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn4" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn4" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area5" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname5" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select5" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info5" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title5" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn5" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn5" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area6" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname6" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select6" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info6" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title6" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn6" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn6" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area7" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname7" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select7" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info7" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title7" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn7" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn7" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area8" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname8" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select8" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info8" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title8" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn8" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn8" style="margin-left:2%;">取消称号</button>
+						</div>
+						<br>
+						<div id="area9" style="width:80%;border-bottom:1px solid #dcdcdc;">
+							<div id="goodname9" style="float:left;width:15%;text-align:center;">
+								张根齐
+							</div>
+							<div style="float:left;width:15%;">
+								<select name="list_select" id="list_select9" style="float:left;width:80%;height:20px;">
+	                        <option value="0">不上榜</option>
+	                        <option value="1">月榜</option>
+	                        <option value="2">年榜</option>
+	                      </select>
+							</div>
+							<div id="info9" style="float:left;width:15%;text-align:center;">
+								个人信息
+							</div>
+							<div id="title9" style="float:left;width:15%;text-align:center;">
+								道德模范
+							</div>
+							<button class="btn btn-info" type="button" id="give_title_btn9" style="margin-left:5%;">授予道德模范称号</button>
+							<button class="btn btn-info" type="button" id="title_cancel_btn9" style="margin-left:2%;">取消称号</button>
+						</div>
+
+
+					</div>
+					<div id="btnArea" style="margin-left:5%;margin-top:10px;">
+						<button class="btn btn-info" style="float:left;" type="button" id="pre_btn">上一页</button>
+						<button class="btn btn-info" style="float:left;margin-left:10px" type="button" id="next_btn">下一页</button>
+						<label style="float:left;margin-left:30px;">跳转到</label>
+						<input type="text" id="page_in" style="width:20px;margin-left:10px;height:15px;float:left;">
+						<label style="float:left;margin-left:10px;">页</label>
+						<button class="btn btn-info" style="float:left;margin-left:20px;" type="button" id="go_btn">go</button>
+						<label style="float:right;margin-right:20%;">页</label>
+						<label id="page" style="float:right;">1</label>
+						<label style="float:right;">当前是第</label>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- end span10 -->
+
+		</div>
+		<!-- end row -->
+
+	</div>
+	<!-- end container -->
+
+	<!-- Le javascript
+================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/excanvas.min.js"></script>
+	<script src="js/jquery.flot.min.js"></script>
+	<script src="js/jquery.flot.resize.js"></script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="js/message.min.js"></script>
+	<script type="text/javascript" src="js/jquerysession.js">
+	</script>
+	<script type="text/javascript" src="js/public/list_mng.js">
+	</script>
+
+</body>
+
+</html>
