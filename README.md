@@ -11,6 +11,7 @@
 - #### 后端语言采用php7
 
 - #### 数据库采用mysql8
+- #### 六个人的队伍我一个人写代码五个人写文档=。=
 ### 效果图
  ![后台](https://upload-images.jianshu.io/upload_images/11624678-edbed74b8c399bb6.jpeg)
 
