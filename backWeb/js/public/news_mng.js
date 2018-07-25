@@ -33,7 +33,7 @@ jQuery(document).ready(function() {
   $('#next_btn').click(function() {
     if (res.length < 10) {
       $.message({
-        message: '已经是第一页了',
+        message: '已经是最后一页了',
         type: 'info'
       });
     }

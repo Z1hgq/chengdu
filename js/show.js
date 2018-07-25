@@ -30,11 +30,11 @@ jQuery(document).ready(function() {
       var str = '#y_201' + (5 + index1);
       for (var i = 0; i < 4; i++) {
         var str1 = '#y_201' + (5 + i);
-        $(str1).css("background-color", "#F0FFFF");
+        $(str1).css("background-color", "#C0C0C0");
       }
       for (var i = 1; i < 13; i++) {
         var str1 = '#m_' + i;
-        $(str1).css("background-color", "#F0FFFF");
+        $(str1).css("background-color", "#C0C0C0");
       }
       $(str).css("background-color", "#fff");
 
@@ -48,13 +48,23 @@ jQuery(document).ready(function() {
           y_list.push(goodman[i]);
         }
       }
-      for (var i = 0; i < y_list.length; i++) {
-        var img_list = '<li><p class="img"><a><img id="img' + i + '" alt="入选人照片" src=" ' + y_list[i].photo + ' " /></a></p><h3><a   id="name0"> ' + y_list[i].name + ' </a></h3><p id="img_area0"> ' + y_list[i].area + '</p></li>'
-        $('#list_con').append(img_list);
+      if(y_list.length == 0){
+        $.message({
+          message: '暂无信息',
+          type: 'warning'
+        });
+      }else{
+        $.message({
+          message: '共'+y_list.length+'条信息',
+          type: 'info'
+        });
+        for (var i = 0; i < y_list.length; i++) {
+          var img_list = '<li><p class="img"><a><img id="img' + i + '" alt="入选人照片" src=" ' + y_list[i].photo + ' " /></a></p><h3><a   id="name0"> ' + y_list[i].name + ' </a></h3><p id="img_area0"> ' + y_list[i].area + '</p></li>'
+          $('#list_con').append(img_list);
+        }
+        img_num = y_list.length;
+        console.log(y_list);
       }
-      img_num = y_list.length;
-      console.log(y_list);
-
     }
 
   });
@@ -71,7 +81,7 @@ jQuery(document).ready(function() {
       var str = '#m_' + (index2 + 1);
       for (var i = 1; i < 13; i++) {
         var str1 = '#m_' + i;
-        $(str1).css("background-color", "#F0FFFF");
+        $(str1).css("background-color", "#C0C0C0");
       }
       $(str).css("background-color", "#fff");
       var time1 = '201' + (5 + index1) + ' ' + (index2 + 1) + '-01 00:00:00';
@@ -84,12 +94,23 @@ jQuery(document).ready(function() {
           y_list.push(goodman[i]);
         }
       }
-      console.log(y_list);
-      for (var i = 0; i < y_list.length; i++) {
-        var img_list = '<li><p class="img"><a><img id="img'+i+'" alt="入选人照片" src=" ' + y_list[i].photo + ' " /></a></p><h3><a   id="name0"> ' + y_list[i].name + ' </a></h3><p id="img_area0"> ' + y_list[i].area + '</p></li>'
-        $('#list_con').append(img_list);
+      if(y_list.length == 0){
+        $.message({
+          message: '暂无信息',
+          type: 'warning'
+        });
+      }else{
+        $.message({
+          message: '共'+y_list.length+'条信息',
+          type: 'info'
+        });
+        for (var i = 0; i < y_list.length; i++) {
+          var img_list = '<li><p class="img"><a><img id="img' + i + '" alt="入选人照片" src=" ' + y_list[i].photo + ' " /></a></p><h3><a   id="name0"> ' + y_list[i].name + ' </a></h3><p id="img_area0"> ' + y_list[i].area + '</p></li>'
+          $('#list_con').append(img_list);
+        }
+        img_num = y_list.length;
+        console.log(y_list);
       }
-      img_num = y_list.length;
     }
   });
   $('#list_con').click(function(e) {

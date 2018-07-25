@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/message.css">
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="js/message.min.js"></script>
 	<link rel="stylesheet" href="css/index.css">
 	<script type="text/javascript" src="js/search.js">
 
@@ -20,11 +23,13 @@
 	</style>
 </head>
 
-<body>
-	<div style=" width: 100%; height:372px; background: url(images/bg-pic.jpg) center top no-repeat">
-	</div>
+<body style="background: url(images/bg.jpg) repeat-y;background-size:100% 2560px;">
+
+	<div style=" width: 100%; height:300px; ">
+		<img src="images/cdby.png" alt="" style="width:30%;height:100px;margin-left:35%;margin-top:100px;">
+</div>
 	<div class="navigation">
-		<ul class="nav nav-tabs" style="margin-left: 25%; width: 50%;">
+		<ul class="" style="margin-left: 20%; width: 60%; text-align: center;">
 			<li><a href="index.html">首页</a></li>
 			<li><a href="ac_intro.html">活动介绍</a></li>
 			<li><a href="ac_dyn.html">活动动态</a></li>
@@ -34,13 +39,13 @@
 			<li><a href="model.html">道德模范</a></li>
 		</ul>
 	</div>
-	<div style="margin-left: 20%;">当前位置 : <a id="contentMain_back">好人检索</a><p id="th_nav" style="display:none;"> / 事迹展示</p>
+	<div style="margin-left: 20%;color:white">当前位置 : <a id="contentMain_back" style="color:white;">好人检索</a><p id="th_nav" style="display:none;"> / 事迹展示</p>
 	</div>
 	<div class="main" style="overflow: hidden">
 		<div style="width: 100%; margin-top: 50px;">
 			<p style="text-align: center;">
-				检索的好人姓名 <input id="name_in" style="height: 30px;" placeholder="请在这里输入全名">
-				<button id="search">搜索</button>
+				检索的好人姓名 <input id="name_in" style="height: 30px;" placeholder="请输入全名">
+				<button class="btn btn-info" id="search">搜索</button>
 			</p>
 		</div>
 		<div id="th" style="display:none">
@@ -49,11 +54,11 @@
 
 		</ul>
 	</div>
-	<div style="height: 60px;">
+
 		<div class="footer">
-			Copyright All Rights Reserved <br /> xxxxxxxxxxx<br /> 活动监督电话：028-61887874
+			<img src="images/xl.png" alt="" style="height:40px;width:80px;">
 		</div>
-	</div>
+
 </body>
 
 </html>

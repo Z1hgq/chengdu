@@ -1,5 +1,6 @@
 body {
-	background: url(../img/bg.png) repeat-y;
+	/* background: url(../img/bg.png) repeat-y; */
+	min-width: 980px
 }
 
 .container {
@@ -16,6 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Masthead */
 
 .main-left-col {
+	width: 100%;
+	height: auto;
 	position: relative;
 	z-index: 1;
 	border-right: 3px solid #F1F1F1;
@@ -43,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-left-col .side-nav {
 	list-style: none;
-	margin: 20px 0 0 0;
+	margin: 10px 0 0 0;
 	border-bottom: 1px solid #414040;
 	border-top: 1px solid #232222;
 }
@@ -54,9 +57,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-left-col .side-nav a {
+	width: inherit;
 	color: #FFF;
 	display: block;
-	padding: 8px 16px;
+	padding: 8px 40px;
 	border-top: 1px solid #414040;
 	border-bottom: 1px solid #232222;
 }
@@ -78,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-left-col .side-nav ul li a {
 	border: none;
-	padding: 4px 16px;
+	padding: 4px 40px;
 	background: #5f5e5e;
 }
 
@@ -100,6 +104,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Secondary Masthead */
 
 .secondary-masthead {
+	/* width: 80%;
+	float: none; */
+	margin-left: 10%;
 	margin: 20px 0 0 0;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -318,10 +325,10 @@ h1, h2, h3, h4, h5, h6 {
 	color: #BBB;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 399px) {
 	.main-left-col {
 		height: auto;
-		margin: 0 -20px;
+		margin: 0 -40px;
 		border-right: none;
 		border-bottom: 3px solid #F1F1F1;
 	}
@@ -330,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 		float: none;
 	}
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 400px) and (max-width: 1280px) {
 	.main-left-col h1 {
 		-webkit-border-radius: 40px;
 		-moz-border-radius: 40px;
@@ -344,4 +351,20 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 140px;
 		line-height: 1;
 	}
+}
+.div1{
+	width:14%;
+	background-size:100% 100%;
+	background: url(../img/bg.png) repeat-y;
+	float:left;
+	min-height:800px;
+	max-height: none;
+	min-width: 0px;
+}
+.div2{
+	min-width: 0px;
+	width:80%;
+	float:left;
+	min-height:800px;
+	margin-left:3%;
 }

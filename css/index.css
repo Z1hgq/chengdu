@@ -1,33 +1,80 @@
+body{
+	background: url(images/bg.jpg) no-repeat;background-size:100% auto;
+	min-width: 1006px;
+}
 .navigation {
 	width: 100%;
 	display: inline-block;
-	background-color: #FFC0CB;
+	background-color: rgb(177,49,68,0.5);
+	color: white;
+	/* opacity:0.5; */
 }
-
+.navigation ul li a {
+	color:white;
+	text-decoration: none;
+}
+.navigation ul{
+	height:inherit;
+}
+.navigation ul li{
+	height: inherit;
+	width: 14.2%;
+	float:left;
+	list-style:none;
+	font-size: 16px;
+	padding: 15px 0;
+	border-radius: 5px;
+}
+.navigation ul li:hover{
+	height: inherit;
+	width: 14.2%;
+	float:left;
+	list-style:none;
+	font-size: 16px;
+	padding: 15px 0;
+	background-color: rgb(0,0,0,0.5);
+}
+.active{
+	height: inherit;
+	width: 14.2%;
+	float:left;
+	list-style:none;
+	font-size: 16px;
+	padding: 15px 0;
+	background-color: rgb(128,128,128,0.5);
+}
+.navigation ul li .active a{
+	color:#000;
+}
 .main {
+	min-width: 768px;
 	width: 60%;
 	margin-left: 20%;
 	z-index: 0;
 	min-height: 500px;
-	background-color: #F0FFFF;
+	background-color: rgb(192,192,192,1);
+	padding: 0px;
+	margin-top: 10px;
+	border-radius: 10px;
 }
 
 .ac_intro {
+	border-radius:10px 10px 0 0;
 	width: 100%;
 	min-height: 300px;
-	background-color: #fff;
+	background-color: rgb(192,192,192,1);
 }
 
 .ac_dyn {
 	width: 100%;
 	min-height: 300px;
-	background-color: #fff;
+	background-color: rgb(192,192,192,1);
 }
 
 .list {
 	width: 100%;
 	min-height: 300px;
-	background-color: #FFF;
+	background-color: rgb(192,192,192,1);
 }
 
 .uImg li {
@@ -129,35 +176,123 @@
 }
 
 .footer {
+	height: 40px;
 	width: 100%;
-	background: #fff;
+	background: rgb(177,49,68,0.5);
 	overflow: hidden;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 0px;
+	bottom:0;
 }
 #news0:hover{
-  cursor: pointer;
+	cursor: pointer;
   text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
 }
 #news1:hover{
-  cursor: pointer;
+	cursor: pointer;
   text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
 }
 #news2:hover{
-  cursor: pointer;
+	cursor: pointer;
   text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
 }
 #news3:hover{
-  cursor: pointer;
+	cursor: pointer;
   text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
 }
 #news4:hover{
-  cursor: pointer;
+	cursor: pointer;
   text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
 }
 #news5:hover{
-  cursor: pointer;
+	cursor: pointer;
   text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
+}
+#news6:hover{
+	cursor: pointer;
+  text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
+}
+#news7:hover{
+	cursor: pointer;
+  text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
+}
+#news8:hover{
+	cursor: pointer;
+  text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
+}
+#news9:hover{
+	cursor: pointer;
+  text-decoration: underline;
+  background-color: rgb(177,49,68,0.5);
+  color:#fff;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 0px;
+  padding-top: 4px;
+  font-size: 16px;
 }
 #mybtn:hover{
 	border:1px solid #b13144;
@@ -166,27 +301,96 @@
 }
 #img0:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 #img1:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 #img2:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 #img3:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 #img4:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 #img5:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 #img6:hover{
 	cursor: pointer;
+	transform: scale(1.1);
 }
 #img7:hover{
 	cursor: pointer;
+	transform: scale(1.1);
+}
+#img8:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img9:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img10:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img11:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img12:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img13:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img14:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img15:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img16:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img17:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img18:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img19:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img20:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+#img21:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+#img22:hover{
+	cursor: pointer;
+	transform: scale(1.1);
 }
 #contentMain_back:hover{
 	cursor: pointer;
