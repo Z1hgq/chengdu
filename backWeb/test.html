@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>成都榜样-后台管理</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <link href="http://fonts.googleapis.com/css?family=Oxygen|Marck+Script" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="css/admin.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/src_mng.css" type="text/css">
+  <link rel="stylesheet" href="css/message.css">
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body style="min-width:768px;display:flex;">
+
+  <div class="" style="">
+
+    <div class="div1" style="width:14%;	background-size:100% 100%;background: url(img/bg.png) repeat-y;float: left;min-height:500px;height:800px;">
+
+      <div class="main-left-col" style="">
+
+        <h1><i class="icon-user-md icon-large"></i><div style="font-size:15px;">成都榜样</div></h1>
+
+        <ul class="side-nav">
+
+          <li class="active">
+            <a href=""><i class="icon-list-ul"></i>素材管理</a>
+          </li>
+          <li>
+            <a href=""><i class="icon-list-ol"></i>活动介绍</a>
+          </li>
+          <li>
+            <a href=""><i class="icon-list"></i>榜单管理</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="collapse" data-target="#website-dropdown" href="#"><i class="icon-user"></i>用户管理<b class="caret"></b></a>
+            <ul id="website-dropdown" class="collapse">
+              <li><a href="">修改密码</a></li>
+              <li><a href="">退出登录</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="collapse" data-target="#members-dropdown" href="#"><i class="icon-paper-clip"></i>稿件管理<b class="caret"></b></a>
+            <ul id="members-dropdown" class="collapse">
+              <li><a href="">新闻稿发布</a></li>
+              <li><a href="">新闻稿管理</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      <!-- end main-left-col -->
+
+    </div>
+    <!-- end span2 -->
+
+    <div class="div2" style="min-width:500px;width:80%;margin-left:10%;float:left;">
+
+      <div class="secondary-masthead">
+
+        <ul class="nav nav-pills pull-right">
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="logname"><i class="icon-user"></i> John Smith <b class="caret"></b>
+				</a>
+            <ul class="dropdown-menu">
+              <li class="divider"></li>
+              <li><a href="" id="logout">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">成都榜样</a> <span class="divider">/</span>
+          </li>
+          <li><a href="" id="contentMain_back">素材管理</a></li>
+          <li id="src_nav" style="display:none"><span class="divider">/</span>素材内容</li>
+          <li id="re_nav" style="display:none"><span class="divider">/</span>推荐人信息</li>
+          <li id="red_nav" style="display:none"><span class="divider">/</span>被推荐人信息</li>
+        </ul>
+
+      </div>
+
+      <div class="main-area dashboard">
+        <div id="con" style="margin-left:5%;margin-top:30px;">
+          <div style="float:left;width:32%;text-align:center;">
+            素材标题
+          </div>
+          <div style="float:left;width:16%;text-align:center;">
+            好人信息
+          </div>
+          <div style="float:left;width:16%;text-align:center;">
+            推荐人信息
+          </div>
+          <br>
+          <br>
+          <div id="area0" style="width:80%;border-bottom:1px solid #dcdcdc;">
+            <div id="title0" style="float:left;width:40%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+              张根齐：四年如一日，专业拯救女大学生于水深火热之中
+            </div>
+            <div id="red_name0" style="float:left;width:20%;text-align:center;">
+              张根齐
+            </div>
+            <div id="re_name0" style="float:left;width:20%;text-align:center;">
+              张根齐
+            </div>
+            <button class="btn btn-info" type="button" id="psss_btn0" style="margin-left:2%;">通过</button>
+            <button class="btn btn-info" type="button" id="unpsss_btn0" style="margin-left:2%;">不通过</button>
+          </div>
+          <br>
+        </div>
+      </div>
+
+    </div>
+    <!-- end span10 -->
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+
+  <!-- Le javascript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/excanvas.min.js"></script>
+  <script src="js/jquery.flot.min.js"></script>
+  <script src="js/jquery.flot.resize.js"></script>
+  <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="js/message.min.js"></script>
+  <script type="text/javascript" src="js/jquerysession.js">
+  </script>
+  <script type="text/javascript" src="js/public/src_mng.js">
+  </script>
+
+</body>
+
+</html>
