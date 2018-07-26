@@ -14,7 +14,7 @@
 
 - #### 服务器采用Apache2
 
-- #### 开发软件采用Atom、Chrome
+- #### 开发软件采用Atom、Chrome、Navicat for MySQL
 
 - #### 六个人的队伍我一个人写代码五个人写文档=。=
 ### 效果图
