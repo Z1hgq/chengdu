@@ -11,7 +11,7 @@ $con = new mysqli(null,$username,$password,$dbname,null,'/tmp/mysql.sock');
 // 检测连接
 $page1 = $page * 10 - 10;
 $page2 = $page * 10;
-$sql = "SELECT * FROM goodman LIMIT $page1,$page2";
+$sql = "SELECT * FROM goodman ORDER BY list_time DESC LIMIT $page1,$page2";
 $result = mysqli_query($con,$sql);
 if (!$result) {
     printf("Error: %s\n", mysqli_error($con));

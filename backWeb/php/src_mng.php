@@ -29,7 +29,7 @@ $jobj=new stdclass();//实例化stdclass，这是php内置的空类，可以用�
 foreach($jarr as $key=>$value){
 $jobj->$key=$value;
 }
-$sql1 = "SELECT * FROM event LIMIT $page1,$page2";
+$sql1 = "SELECT * FROM event ORDER BY ID DESC LIMIT $page1,$page2";
 $result1 = mysqli_query($con,$sql1);
 if (!$result1) {
     printf("Error: %s\n", mysqli_error($con));
